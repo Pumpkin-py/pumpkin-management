@@ -24,7 +24,7 @@ class Purge(commands.Cog):
     async def purge(self, ctx: commands.Context, count: Optional[int] = None):
         """Purge spam messages.
 
-        Either reply to the oldest message you want to keep or provide a number of messages to delete.
+        Either reply to the oldest message you want to keep or provide a positive number of messages to delete.
 
         This command keeps pinned messages intact.
         """
