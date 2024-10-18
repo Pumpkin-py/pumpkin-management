@@ -19,8 +19,8 @@ msgstr Komentář odebrán.
 msgid Unknown author
 msgstr Neznámý autor.
 
-msgid Please use either a reply or provide a number of messages to delete. Not both.
-msgstr Prosím použij odpověď na zprávu, nebo počet zpráv ke smazání. Ne obojí.
+msgid Please use either a reply or provide a positive number of messages to delete. Not both.
+msgstr Prosím použij odpověď na zprávu, nebo kladný počet zpráv ke smazání. Ne obojí.
 
 msgid Confirm delete.
 msgstr Potvrzení smazání.
@@ -37,8 +37,8 @@ msgstr Akce zrušena.
 msgid Number of messages to delete
 msgstr Počet zpráv ke smazání
 
-msgid Please use either a reply or provide a number of messages to delete.
-msgstr Prosím použij odpověď na zprávu, nebo počet zpráv ke smazání.
+msgid Please use either a reply or provide a positive number of messages to delete.
+msgstr Prosím použij odpověď na zprávu, nebo kladný počet zpráv ke smazání.
 
 msgid Deleted {deleted} message(s)
 msgstr Smazáno {deleted} zpráv.

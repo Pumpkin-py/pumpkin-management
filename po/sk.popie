@@ -19,8 +19,8 @@ msgstr Komentár odobraný.
 msgid Unknown author
 msgstr Neznámy autor.
 
-msgid Please use either a reply or provide a number of messages to delete. Not both.
-msgstr Prosím použi odpoveď na správu, alebo počet správ na zmazanie. Nie oboje.
+msgid Please use either a reply or provide a positive number of messages to delete. Not both.
+msgstr
 
 msgid Confirm delete.
 msgstr Potvrdenie zmazania
@@ -37,8 +37,8 @@ msgstr Akcia zrušená.
 msgid Number of messages to delete
 msgstr Počet správ na vymazanie.
 
-msgid Please use either a reply or provide a number of messages to delete.
-msgstr Prosím použi odpoveď na správu, alebo počet správ na zmazanie.
+msgid Please use either a reply or provide a positive number of messages to delete.
+msgstr
 
 msgid Deleted {deleted} message(s)
 msgstr Zmazané {deleted} správ.
