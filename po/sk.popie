@@ -38,8 +38,7 @@ msgid Number of messages to delete
 msgstr Počet správ na vymazanie.
 
 msgid Please use either a reply or provide a positive number of messages to delete.
-msgstr Prosím použi odpoveď na správu, alebo kladný počet správ na zmazanie. Nie oboje.
-
+msgstr Prosím použi odpoveď na správu, alebo kladný počet správ na zmazanie.
 msgid Deleted {deleted} message(s)
 msgstr Zmazané {deleted} správ.
 
