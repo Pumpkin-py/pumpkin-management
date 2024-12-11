@@ -24,7 +24,7 @@ class Purge(commands.Cog):
     async def purge(self, ctx: commands.Context, count: Optional[int] = None):
         """Purge spam messages.
 
-        Either reply to the oldest message you want to keep or provide a number of messages to delete.
+        Either reply to the oldest message you want to keep or provide a positive number of messages to delete.
 
         This command keeps pinned messages intact.
         """
@@ -35,7 +35,7 @@ class Purge(commands.Cog):
                 await ctx.reply(
                     _(
                         ctx,
-                        "Please use either a reply or provide a number of messages to delete. Not both.",
+                        "Please use either a reply or provide a positive number of messages to delete. Not both.",
                     )
                 )
                 return
@@ -69,7 +69,7 @@ class Purge(commands.Cog):
                 await ctx.send(_(ctx, "Aborted."))
                 return
 
-        elif count is not None:
+        elif count is not None and count > 0:
             if count > 10:
                 embed = utils.discord.create_embed(
                     author=ctx.author,
@@ -107,7 +107,7 @@ class Purge(commands.Cog):
             await ctx.reply(
                 _(
                     ctx,
-                    "Please use either a reply or provide a number of messages to delete.",
+                    "Please use either a reply or provide a positive number of messages to delete.",
                 )
             )
             return
@@ -117,8 +117,10 @@ class Purge(commands.Cog):
             ctx.channel,
             f"Deleted {len(deleted)} message(s)",
         )
+        await ctx.message.delete()
         await channel.send(
-            _(ctx, "Deleted {deleted} message(s)").format(deleted=len(deleted))
+            _(ctx, "Deleted {deleted} message(s)").format(deleted=len(deleted)),
+            delete_after=10,
         )
 
 
